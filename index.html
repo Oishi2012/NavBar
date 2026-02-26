@@ -48,6 +48,29 @@
         <a class href="#gallery">Gallery</a>
     </div>
 
+    <div id="carousel">
+        <img class="my slides" src="./delicious-burger-food-menu-web-banner-template_106176-1434.png" height="700px"
+            width="100%">
+        <img class="my slides" src="./food-menu-delicious-pizza-facebook-cover-banner-template_106176-381.png"
+            height="700px" width="100%">
+    </div>
+    <script>
+        var index = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("my slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+            if (index > x.length) { index = 1 }
+            x[index - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+
+    </script>
+
 </body>
 
 </html>
