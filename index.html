@@ -54,39 +54,57 @@
         <img class="my slides" src="./food-menu-delicious-pizza-facebook-cover-banner-template_106176-381.png"
             height="700px" width="100%">
     </div>
-    <script>
-        var index = 0;
-        carousel();
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("my slides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+    <div class="footer"
+        style="position: fixed; text-align: center; bottom: 0; width: 100%; background-color: rgb(90, 236, 241); padding: 10px;margin-top: 50px;">
+        <p>@Copy all rights are reserved by Fatema Hasan.</p>
+
+    </div>
+    <div class="About us"
+        style="text-align: center; padding:30px; border:2px solid black; margin:30px;background-color: purple;">
+        <h2>About us</h2>
+        <p>We are a food delievery website where we provide delicious foods. We have a large variety of food items to
+            chose from our website. We are here to provide you the best food. We deliever food items to our costumers at
+            their houses. We hope that you would find something you like from our website.
+
+
+
+        </p>
+        <script>
+            var index = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("my slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                index++;
+                if (index > x.length) { index = 1 }
+                x[index - 1].style.display = "block";
+                setTimeout(carousel, 2000);
             }
-            index++;
-            if (index > x.length) { index = 1 }
-            x[index - 1].style.display = "block";
-            setTimeout(carousel, 2000);
-        }
 
-    </script>
+        </script>
 
-    <div>
-        <h1 style="text-align: center; padding:30px; border:2px solid black">Welcome to this website.</h1>
-        <div style="background-color:pink; padding:30px; text-align: center;">
-            <h2>We are here to provide you the best food.</h2>
-            <p>We have a wide variety of food items to choose from. We are sure you will find something you like. </p>
+        <div>
+            <h1 style="text-align: center; padding:30px; border:2px solid black;background-color: aquamarine;">Welcome
+                to this website.</h1>
+            <div style="background-color:pink; padding:30px; text-align: center; ">
+                <h2>We are here to provide you the best food.</h2>
+                <p>We have a wide variety of food items to choose from. We are sure you will find something you like.
+                </p>
+            </div>
+
+
+        </div>
+        <!-----Backround-image-->
+        <div
+            style="background-image: url('./food-4k-spdnpz7bhmx4kv2r.png');height:400px; background-size: cover; background-position: center;">
+            <p style="text-align: center; font-size: 60px; margin:50px; padding:200px; color:pink; ">
+                Enjoy your meal with
+                us.</p>
         </div>
 
-
-    </div>
-    <!-----Backround-image-->
-    <div
-        style="background-image: url('./food-4k-spdnpz7bhmx4kv2r.png');height:400px; background-size: cover; background-position: center;">
-        <p style="text-align: center; font-size: 80px; margin:50px; padding:200px; color:pink; ">
-            Enjoy your meal with
-            us.</p>
-    </div>
 </body>
 
 </html>
